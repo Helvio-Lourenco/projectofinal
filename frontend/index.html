@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Loja Online</h1>
+
+        <!-- Lista de Produtos -->
+        <div id="product-list" class="product-list">
+            <!-- Injetado por JS -->
+        </div>
+
+        <hr>
+
+        <!-- Carrinho / Total -->
+        <div class="cart-section">
+            <h2>Total: €<span id="total-amount">0.00</span></h2>
+            <div id="cart-debug" style="margin-bottom: 10px; color: gray; font-size: 0.9em;">
+                (Itens no carrinho: <span id="cart-count">0</span>)
+            </div>
+        </div>
+
+        <!-- Formulário de Encomenda -->
+        <div class="order-form">
+            <h3>Finalizar Encomenda</h3>
+            <form id="order-form">
+                <div class="form-group">
+                    <label for="cust-name">Nome:</label>
+                    <input type="text" id="cust-name" required placeholder="Seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="cust-email">Email:</label>
+                    <input type="email" id="cust-email" required placeholder="seu@email.com">
+                </div>
+                <button type="submit">Finalizar Encomenda</button>
+            </form>
+            <p id="message"></p>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
