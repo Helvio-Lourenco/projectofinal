@@ -26,7 +26,7 @@ docker-compose up --build --scale frontend=3
 
 - **Loja (UI)**: Abra [http://localhost](http://localhost)
 - **Dashboard Traefik**: [http://localhost:8080](http://localhost:8080)
-- **API**: [http://localhost/api](http://localhost/api)
+
 
 ### 3. Implantação da Infraestrutura
 Para implantar os recursos na nuvem:
